@@ -5,7 +5,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    /* Image jeno kete na jay tai contain use kora hoyeche */
     opacity: 0.6;
     pointer-events: none;
 }
@@ -16,7 +15,8 @@
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    /* Footer-er puro area cover korbe */
+    opacity: 0.7;
+    pointer-events: none;
 }
 
 .gradient-text {
@@ -79,20 +79,19 @@ html {
     /* Medium & Small Devices */
     .hero-wave-bg {
         background-size: 150% auto;
-        /* Choto screen-e ektu boro dekhabe */
         background-position: center 20%;
     }
 
     .wave-bg {
         background-size: 200% auto;
-        /* Mobile-e wave gulo boro dekhabe */
+        background-position: center bottom;
+        background-repeat: no-repeat;
     }
 }
 
 @media (max-width: 576px) {
     .hero-wave-bg {
         background-size: 250% auto;
-        /* Mobile-e boro kore faka jayga puron korbe */
         background-position: center 10%;
     }
 
