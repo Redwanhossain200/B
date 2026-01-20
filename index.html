@@ -5,17 +5,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TechWave Podcast</title>
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
+  <!-- Fav Icon  -->
+  <link rel="shortcut icon" href="https://img.icons8.com/?size=48&id=hOJse2pJkQ1f&format=png" type="image/x-icon">
 </head>
 
 <body class="bg-[#0d0118] text-white font-['Inter']">
 
+  <!-- Header Section  -->
   <header class="sticky top-0 z-50 bg-[#1a0b2e]/90 backdrop-blur-md border-b border-[#412567]/70">
     <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <div class="text-2xl font-bold logo-text">Tech<span class="gradient-text">Wave</span></div>
+      <div class="text-2xl font-bold logo-text cursor-pointer">Tech<span class="gradient-text">Wave</span></div>
 
       <ul class="hidden lg:flex gap-8 font-medium opacity-90">
         <li><a href="#" class="hover:underline">About</a></li>
@@ -25,7 +32,7 @@
 
       <div class="flex items-center gap-4">
         <button
-          class="hidden lg:block bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] px-6 py-2 rounded-full font-bold transition-transform hover:scale-105">
+          class="hidden lg:block bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] px-6 py-2 rounded-full font-bold transition-transform hover:scale-105 cursor-pointer">
           Subscribe <i class="fa-solid fa-arrow-right-long ml-2"></i>
         </button>
 
@@ -36,6 +43,7 @@
     </nav>
   </header>
 
+  <!-- Hero Section -->
   <section class="relative pt-20 pb-16 px-6 overflow-hidden text-center">
     <div class="hero-wave-bg absolute inset-0 opacity-50 pointer-events-none"></div>
 
@@ -46,23 +54,24 @@
         <img src="./assets/microphone.png" alt="Mic" class="w-24 lg:w-32 drop-shadow-2xl">
       </div>
 
-      <h1 class="text-5xl lg:text-7xl font-extrabold mb-4">TechWave</h1>
+      <h1 class="text-5xl lg:text-7xl font-extrabold mb-4">Tech<span class="gradient-text">Wave</span></h1>
       <p class="text-[#bfaec9] max-w-lg mx-auto mb-10">Your daily dose of tech insights, productivity hacks, and
         personal growth</p>
 
       <div class="flex flex-wrap justify-center gap-4">
         <button
-          class="bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] px-8 py-4 rounded-full font-bold flex items-center gap-2 hover:shadow-[0_0_25px_rgba(251,9,180,0.5)] transition-all">
+          class="bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] px-8 py-4 rounded-full font-bold flex items-center gap-2 hover:shadow-[0_0_25px_rgba(251,9,180,0.5)] transition-all cursor-pointer">
           <i class="fa-brands fa-spotify text-xl"></i> Listen On Spotify
         </button>
         <button
-          class="border border-[#00ff88] text-[#00ff88] bg-[#00ff88]/5 px-8 py-4 rounded-full font-bold flex items-center gap-2 hover:bg-[#00ff88]/10 transition-all">
+          class="border border-[#00ff88] text-[#00ff88] bg-[#00ff88]/5 px-8 py-4 rounded-full font-bold flex items-center gap-2 hover:bg-[#00ff88]/10 transition-all cursor-pointer">
           <i class="fa-regular fa-envelope text-xl"></i> Subscribe
         </button>
       </div>
     </div>
   </section>
 
+  <!-- About Section -->
   <section class="py-20 px-6 max-w-5xl mx-auto text-center">
     <h2 class="text-4xl font-bold mb-6">About The Podcast</h2>
     <p class="text-[#dcd1e6] leading-relaxed mb-12">
@@ -95,6 +104,7 @@
     </div>
   </section>
 
+  <!-- Why Choose Section -->
   <section class="py-20 px-6 bg-[#230e3d]">
     <h2 class="text-4xl font-bold text-center mb-16">Why Choose TechWave</h2>
 
@@ -150,6 +160,7 @@
     </div>
   </section>
 
+  <!-- Featured Episodes Section -->
   <section class="py-16 px-4 lg:px-20 max-w-7xl mx-auto">
     <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-16">Featured Episodes</h2>
 
@@ -227,9 +238,10 @@
     </div>
   </section>
 
+  <!-- Host Section -->
   <section id="host" class="py-12 md:py-20 px-6">
     <div class="max-w-5xl mx-auto text-center">
-      <h2 class="text-white text-3xl md:text-5xl font-bold mb-10">Meet The Host</h2>
+      <h2 class="text-white text-4xl md:text-5xl font-bold mb-10">Meet The Host</h2>
 
       <div
         class="bg-[#1e0a3d] rounded-[40px] p-8 md:p-12 flex flex-col md:flex-row items-center gap-10 md:gap-14 border border-white/5 shadow-2xl">
@@ -241,7 +253,7 @@
 
         <div class="text-center md:text-left">
           <h3 class="text-white text-3xl md:text-4xl font-bold mb-4">Alex Kumar</h3>
-          <p class="text-gray-400 text-base md:text-lg leading-relaxed mb-8">
+          <p class="text-gray-400 text-base md:text-[16px] leading-relaxed mb-8">
             Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10
             years, working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry
             leaders and practical advice for anyone looking to grow in tech.
@@ -249,19 +261,19 @@
 
           <div class="flex justify-center md:justify-start gap-5">
             <a href="#"
-              class="w-12 h-12 flex items-center justify-center rounded-full bg-white/5 hover:bg-white/10 transition-all text-pink-500 border border-white/10">
+              class="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 hover:bg-white/10 transition-all text-pink-500 border border-white/10">
               <i class="fab fa-linkedin-in text-xl"></i>
             </a>
             <a href="#"
-              class="w-12 h-12 flex items-center justify-center rounded-full bg-white/5 hover:bg-white/10 transition-all text-pink-500 border border-white/10">
+              class="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 hover:bg-white/10 transition-all text-pink-500 border border-white/10">
               <i class="fab fa-x-twitter text-xl"></i>
             </a>
             <a href="#"
-              class="w-12 h-12 flex items-center justify-center rounded-full bg-white/5 hover:bg-white/10 transition-all text-pink-500 border border-white/10">
+              class="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 hover:bg-white/10 transition-all text-pink-500 border border-white/10">
               <i class="fab fa-instagram text-xl"></i>
             </a>
             <a href="#"
-              class="w-12 h-12 flex items-center justify-center rounded-full bg-white/5 hover:bg-white/10 transition-all text-pink-500 border border-white/10">
+              class="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 hover:bg-white/10 transition-all text-pink-500 border border-white/10">
               <i class="fab fa-youtube text-xl"></i>
             </a>
           </div>
@@ -271,7 +283,7 @@
     </div>
   </section>
 
-
+  <!-- Footer Section -->
   <footer class="bg-[#1a0b2e] text-gray-400 py-12 px-4 relative overflow-hidden">
 
     <div class="absolute inset-0 opacity-20 wave-bg pointer-events-none"></div>
